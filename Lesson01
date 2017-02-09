@@ -17,8 +17,13 @@ public class TreeStory {
             adjective - A description used to modify or describe a noun
             Enter your amazing code here!
         */
+        // Defining a String
+        String ageAsString = console.readLine("How old are you? ");
+        
+        // Converting the String to integer using a wrapper type (from the wrapper class Integer).
+        int age = Integer.parseInt(ageAsString);
+        
         //int is a primitive data type.
-        int age = 12;
         if (age < 13) {
           //
           console.printf("Sorry, too young!\n");
