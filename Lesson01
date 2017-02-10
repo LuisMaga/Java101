@@ -32,6 +32,12 @@ public class TreeStory {
         String name = console.readLine("Enter a name:  ");
         String adjective = console.readline("Enter an adjective:  ");
         String noun = console.readline("Enter a noun:  ");        
+        if (noun.equalsIgnoreCase("dork") || 
+            noun.equalsIgnoreCase("jerk") ) {
+          console.printf("That language is not allowed. Exiting. \n\n");
+          System.exit(0);
+        }
+        
         String adverb = console.readline("Enter an adverb:  ");        
         String verb = console.readline("Enter a verb ending in -ing:  ");        
         
